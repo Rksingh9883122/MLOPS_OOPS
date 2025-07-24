@@ -24,8 +24,8 @@ class chatbook:
             exit()
             
     def signup(self):
-        email = input('enter your emailid')
-        password = input('your password')
+        email = input('enter your email_id ->')
+        password = input('your password ->')
         self.username = email
         self.password = password
         print(f'Welcome {self.username}, you have successfully signed up!')
