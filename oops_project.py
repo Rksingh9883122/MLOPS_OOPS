@@ -23,6 +23,13 @@ class chatbook:
         else:
             exit()
             
+    def signup(self):
+        email = input('enter your emailid')
+        password = input('your password')
+        self.username = email
+        self.password = password
+        print(f'Welcome {self.username}, you have successfully signed up!')
+            
         obj = chatbook()
     
                 
