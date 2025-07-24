@@ -29,6 +29,7 @@ class chatbook:
         self.username = email
         self.password = password
         print(f'Welcome {self.username}, you have successfully signed up!')
+        self.menu()
             
         obj = chatbook()
     
