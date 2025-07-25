@@ -15,7 +15,7 @@ class chatbook:
         if user_input =='1':
             self.signup()
         if user_input == '2':
-            pass
+            self.signin()
         if user_input == '3':
             pass
         if user_input == '4':
@@ -39,16 +39,16 @@ class chatbook:
             password = input("enter your password ->")
         if self.username == username and self.password == password:
            print("you have logged in successfully")
-           self.loggedin == True
+           self.loggedin = True
         else:
             print('please enter your credential correctly')
         self.menu()
             
-    
-   
+     
         
                                                                                         
 obj = chatbook()
+    
     
                 
         
