@@ -18,5 +18,11 @@ animal.speak()
 dog = Dog('Jacky')
 dog.speak()
            
+class Cat(Animal):
+    def speak(self):
+        print(f"{self.name} Meaws")
+        
+cat = Cat('Tom')
+cat.speak()
            
 
