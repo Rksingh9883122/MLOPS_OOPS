@@ -11,15 +11,17 @@ class chatbook:
                            2. press 2 to login
                            3. press 3 to write a post
                            4. press 4 to message a friend
-                           5. press any ket to exit""")
+                           5. press any ket to exit
+                           
+                             """)
         if user_input =='1':
             self.signup()
         if user_input == '2':
             self.signin()
         if user_input == '3':
-            pass
+            self.my_post()
         if user_input == '4':
-            pass
+            self.message_friend()
         else:
             exit()
             
@@ -42,12 +44,33 @@ class chatbook:
            self.loggedin = True
         else:
             print('please enter your credential correctly')
+        print("\n")
         self.menu()
             
-     
+    def my_post(self):
+        if self.loggedin == True:
+           post = input("Write your message -> ")
+           print(f"You have posted: \"{post}\"")
+        else:
+            print("Please login first by pressing 2.")
+    
+        print("\n")
+    self.menu()
+
         
-                                                                                        
-obj = chatbook()
+    def message_friend(self):
+        if self.loggedin  == True:
+            post = input("write your message here ->")
+            friend = input("whom to send the message ->")
+            print(f"you have sent your message {friend}")
+        else:
+            print("please signin first to post something")
+        print("\n")
+        self.menu()
+                
+             
+                                                                                               
+user1 = chatbook()
     
     
                 
